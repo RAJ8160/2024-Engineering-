@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+		div{
+			background-color:red;
+			animation-duration:3s;
+			animation-name:slidein;
+			text-align:center;
+			width: 200px;
+			height: 200px;
+			transition-delay:3s;
+			position:relative;
+            animation-iteration-count:infinite;
+            animation-direction: reverse;
+		}
+		
+		@keyframes slidein{
+			0%{
+                left:0px;
+                top: 0px;
+                background-color: blue;
+            }
+            25%{
+            	left:700px;
+                top:0px;
+                border-color: yellow;
+            }
+            50%{
+            	left:700px;
+                top:700px;
+                border-color:green;
+            }
+            75%{
+            	left:0px;
+                top:700px;
+                border-color:purple;
+            }
+            100%{
+            	left:0px;
+                top:0px;
+                border-color:pink;
+            }
+		}
+	
+	
+</div>
+	</style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+<div class="a1">
+	This is in i phone
+</div>
+
+</body>
+</html>
